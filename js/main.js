@@ -4,16 +4,16 @@ buttonCreate.addEventListener("click",
     function () {
         let userName = document.getElementById("userName");
         let userKm = document.getElementById("km");
-        let userAge = parseInt(document.getElementById("eta"));
+        let userAge = document.getElementById("eta");
 
         // CONTROLLO ATTRIBUTI PASSEGGERO
         console.log(userName.value);
-        console.log(km.value);
-        console.log(eta.value);
+        console.log(userKm.value);
+        console.log(userAge.value);
 
         document.getElementById("user").innerHTML = userName.value;
         
-        let total = 0;
+        let total;
         let price = (userKm * 0.21).toFixed(2);
         if (userAge >= 65) {
             let discount = ((price * 40) / 100).toFixed(2);
