@@ -4,7 +4,7 @@ buttonCreate.addEventListener("click",
     function () {
         let userName = document.getElementById("userName");
         let userKm = document.getElementById("km");
-        let userAge = document.getElementById("eta");
+        let userAge = parseInt(document.getElementById("eta"));
 
         // CONTROLLO ATTRIBUTI PASSEGGERO
         console.log(userName.value);
