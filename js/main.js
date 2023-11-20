@@ -3,12 +3,12 @@ const buttonCreate = document.getElementById("create");
 buttonCreate.addEventListener("click",
     function () {
         let userName = document.getElementById("userName");
-        let userKm = document.getElementById("km");
+        let userKm = parseInt(document.getElementById("km").value);
         let userAge = parseInt(document.getElementById("eta").value);
 
         // CONTROLLO ATTRIBUTI PASSEGGERO
         console.log(userName.value);
-        console.log(userKm.value);
+        console.log(userKm);
         console.log(userAge);
 
         document.getElementById("user").innerHTML = userName.value;
