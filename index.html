@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>CALCOLO PREZZO BIGLIETTO</h1>
+    <input type="text" id="userName">
+    <input type="number" id="km">
+    <input type="text" id="eta">
+
+    <button id="create">Genera</button>
+    <button id="reset">Annulla</button>
+
+    <h1>IL TUO BIGLIETTO</h1>
+    <div class="ticket-table">
+        <table>
+            <thead>
+                <tr>
+                    <th> NOME PASSEGGERO</th>
+                    <th> OFFERTA</th>
+                    <th> CARROZZA</th>
+                    <th> CODICE CP</th>
+                    <th> COSTO BIGLIETTO</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td id="user"></td>
+                    <td id="ticket"></td>
+                    <td> 5</td>
+                    <td> 92911</td>
+                    <td id="price"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
