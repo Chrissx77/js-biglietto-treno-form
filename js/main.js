@@ -9,7 +9,7 @@ buttonCreate.addEventListener("click",
         // CONTROLLO ATTRIBUTI PASSEGGERO
         console.log(userName.value);
         console.log(userKm.value);
-        console.log(userAge.value);
+        console.log(userAge);
 
         document.getElementById("user").innerHTML = userName.value;
         
