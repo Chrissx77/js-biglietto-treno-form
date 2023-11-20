@@ -38,11 +38,5 @@ const buttonReset = document.getElementById("reset");
 buttonReset.addEventListener("click",
     function () {
         document.querySelector(".ticket-table").classList.remove("active");
-
-        userName.value = "";
-
-        // DEBUG
-        console.log(userKm);
-        console.log(userAge);
     }
 )
