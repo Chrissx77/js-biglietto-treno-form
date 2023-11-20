@@ -1,10 +1,14 @@
+var userName = document.getElementById("userName");
+var userKm = document.getElementById("km");
+var userAge = document.getElementById("eta");
+
 
 const buttonCreate = document.getElementById("create");
 buttonCreate.addEventListener("click",
     function () {
-        let userName = document.getElementById("userName");
-        let userKm = parseInt(document.getElementById("km").value);
-        let userAge = parseInt(document.getElementById("eta").value);
+        userName = document.getElementById("userName");
+        userKm = parseInt(document.getElementById("km").value);
+        userAge = parseInt(document.getElementById("eta").value);
 
         document.getElementById("user").innerHTML = userName.value;
 
@@ -26,5 +30,19 @@ buttonCreate.addEventListener("click",
 
         document.getElementById("price").innerHTML = total;
         document.querySelector(".ticket-table").classList.add("active");
+
+    }
+)
+
+const buttonReset = document.getElementById("reset");
+buttonReset.addEventListener("click",
+    function () {
+        document.querySelector(".ticket-table").classList.remove("active");
+
+        userName.value = "";
+
+        // DEBUG
+        console.log(userKm);
+        console.log(userAge);
     }
 )
