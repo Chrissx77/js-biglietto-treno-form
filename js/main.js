@@ -6,13 +6,8 @@ buttonCreate.addEventListener("click",
         let userKm = parseInt(document.getElementById("km").value);
         let userAge = parseInt(document.getElementById("eta").value);
 
-        // CONTROLLO ATTRIBUTI PASSEGGERO
-        console.log(userName.value);
-        console.log(userKm);
-        console.log(userAge);
-
         document.getElementById("user").innerHTML = userName.value;
-        
+
         let total;
         let price = (userKm * 0.21).toFixed(2);
         if (userAge >= 65) {
@@ -30,5 +25,6 @@ buttonCreate.addEventListener("click",
         }
 
         document.getElementById("price").innerHTML = total;
+        document.querySelector(".ticket-table").classList.add("active");
     }
 )
