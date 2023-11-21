@@ -2,7 +2,6 @@ var userName = document.getElementById("userName");
 var userKm = document.getElementById("km");
 var userAge = document.getElementById("eta");
 
-
 const buttonCreate = document.getElementById("create");
 buttonCreate.addEventListener("click",
     function () {
